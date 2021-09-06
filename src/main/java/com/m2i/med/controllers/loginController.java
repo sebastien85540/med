@@ -15,6 +15,6 @@ public class loginController {
     public String login(Model model){
         String titre = "page d'accueil";
         model.addAttribute("accueil", titre);
-        return "login/index";
+        return "login/login";
     }
 }
