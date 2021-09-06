@@ -6,13 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("")
 public class loginController {
 
-    @GetMapping
+
+
+    @GetMapping("/login")
     public String login(Model model){
         String titre = "page d'accueil";
         model.addAttribute("accueil", titre);
-        return "login/login";
+        return "login/index";
     }
 }
